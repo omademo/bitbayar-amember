@@ -110,7 +110,7 @@ class Am_Paysystem_Transaction_Bitbayar extends Am_Paysystem_Transaction_Incomin
 	public function validateStatus()
 	{
 		$data = array(
-		'token'=>'S82EFDBBE2CFFEC683925AB67FA41AD46',
+		'token'=>$this->getConfig('apiToken'),
 		'id'=>$this->request->getFiltered('id')
 		);
 
